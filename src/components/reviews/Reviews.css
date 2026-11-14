@@ -1,0 +1,279 @@
+
+.reviews {
+  width: 100%;
+  background: #fff;
+  padding: 70px 0;
+  box-sizing: border-box;
+}
+
+.reviews-container {
+  width: 875px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 65px;
+}
+
+/* Chap taraf */
+
+.reviews-left {
+  width: 290px;
+  flex-shrink: 0;
+}
+
+.reviews-left h2 {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 31px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.reviews-line {
+  width: 33px;
+  height: 2px;
+  background: #ffca42;
+  margin: 20px 0;
+}
+
+.reviews-left > p {
+  color: #9299a4;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 3px;
+  color: #ffca42;
+  font-size: 18px;
+}
+
+.half-star {
+  font-size: 18px;
+}
+
+.overall-rating strong {
+  color: #1e3b68;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.rating-caption {
+  display: block;
+  color: #1e3b68;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* O'ng tarafdagi review kartalari */
+
+.reviews-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.review-card {
+  width: 100%;
+  min-height: 195px;
+  padding: 22px 20px 18px;
+  box-sizing: border-box;
+  background: #1e3b68;
+  color: white;
+}
+
+.review-martin {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.review-james {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.review-christina {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.review-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e8edf5;
+  flex-shrink: 0;
+}
+
+.review-user-info {
+  min-width: 0;
+}
+
+.review-user-info h3 {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+
+.review-stars {
+  color: #ffca42;
+  font-size: 14px;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.review-stars span {
+  font-size: 13px;
+}
+
+.review-card h4 {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.review-card > p {
+  color: #c0cce0;
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .reviews-container {
+    gap: 35px;
+  }
+
+  .reviews-left {
+    width: 250px;
+  }
+
+  .reviews-left h2 {
+    font-size: 28px;
+  }
+
+  .reviews-right {
+    gap: 14px;
+  }
+
+  .review-card {
+    padding: 18px 14px;
+  }
+
+  .review-avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .review-user {
+    gap: 8px;
+  }
+
+  .review-user-info h3 {
+    font-size: 12px;
+  }
+
+  .review-card h4 {
+    font-size: 12px;
+  }
+
+  .review-card > p {
+    font-size: 11px;
+  }
+}
+
+/* Telefon */
+
+@media (max-width: 600px) {
+  .reviews {
+    padding: 45px 0;
+  }
+
+  .reviews-container {
+    width: 88%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+  }
+
+  .reviews-left {
+    width: 100%;
+  }
+
+  .reviews-left h2 {
+    font-size: 29px;
+  }
+
+  .reviews-left > p {
+    font-size: 12px;
+  }
+
+  .reviews-right {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .review-card {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .review-user {
+    gap: 12px;
+  }
+
+  .review-avatar {
+    width: 55px;
+    height: 55px;
+  }
+
+  .review-user-info h3 {
+    font-size: 14px;
+  }
+
+  .review-card h4 {
+    font-size: 14px;
+  }
+
+  .review-card > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .reviews-left h2 {
+    font-size: 26px;
+  }
+
+  .review-card {
+    padding: 18px;
+  }
+}

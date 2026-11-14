@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 404 sahifa */
+.not-found {
+  width: 100%;
+  height: 650px;
+  min-height: 650px;
+
+  background-image: url("../../assets/bg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+}
+
+/* 404 matnlari */
+.not-found-content {
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+}
+
+.not-found-content h1 {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 5px 5px #ffca42;
+  margin-bottom: 15px;
+}
+
+.not-found-content h2 {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.not-found-content p {
+  max-width: 400px;
+  margin: 0 auto 20px;
+
+  color: #9299a4;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.not-found-content button {
+  width: 114px;
+  height: 36px;
+
+  background-color: #ffca42;
+  color: #1e3b68;
+  border: none;
+
+  font-family: Georgia, serif;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.not-found-content button:hover {
+  background-color: #f0b82e;
+}
+
+/* Tepada va pastda ko‘k fon bo‘lsa */
+.page-error {
+  width: 100%;
+  min-height: 300px;
+  background-color: #1e3b68;
+  padding: 60px 20px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .not-found {
+    height: 600px;
+    min-height: 600px;
+    background-size: cover;
+  }
+
+  .not-found-content h1 {
+    font-size: 120px;
+  }
+
+  .page-error {
+    min-height: 270px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .not-found {
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 25px 20px;
+  }
+
+  .not-found-content h1 {
+    font-size: 95px;
+    margin-bottom: 18px;
+  }
+
+  .not-found-content h2 {
+    font-size: 18px;
+  }
+
+  .not-found-content p {
+    max-width: 330px;
+    font-size: 11px;
+  }
+
+  .page-error {
+    min-height: 250px;
+    padding: 50px 20px;
+  }
+}
+
+/* Kichik telefon */
+@media (max-width: 360px) {
+  .not-found {
+    height: 550px;
+    min-height: 550px;
+  }
+
+  .not-found-content h1 {
+    font-size: 80px;
+  }
+
+  .not-found-content h2 {
+    font-size: 17px;
+  }
+}

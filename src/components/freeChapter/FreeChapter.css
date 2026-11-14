@@ -1,0 +1,133 @@
+
+.free-chapter {
+  width: 100%;
+  padding: 55px 20px 100px;
+  background: white;
+  box-sizing: border-box;
+}
+
+.free-chapter-box {
+  width: 895px;
+  max-width: 100%;
+  min-height: 349px;
+  margin: auto;
+  padding: 80px 30px;
+  box-sizing: border-box;
+  background: #ffca42;
+  text-align: center;
+}
+
+.free-chapter-box h2 {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.free-chapter-line {
+  width: 38px;
+  height: 2px;
+  background: #1e3b68;
+  margin: 12px auto 16px;
+}
+
+.free-chapter-box p {
+  color: #1e3b68;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 27px;
+}
+
+.free-chapter-form {
+  width: 580px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 7px;
+}
+
+.free-chapter-form input {
+  flex: 1;
+  min-width: 0;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0 17px;
+  background: white;
+  color: #1e3b68;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.free-chapter-form input::placeholder {
+  color: #9299a4;
+}
+
+.free-chapter-form button {
+  width: 207px;
+  height: 45px;
+  flex-shrink: 0;
+  border: none;
+  background: #1e3b68;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .free-chapter-box {
+    min-height: auto;
+    padding: 65px 25px;
+  }
+
+  .free-chapter-form button {
+    width: 170px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .free-chapter {
+    padding: 40px 16px 60px;
+  }
+
+  .free-chapter-box {
+    padding: 45px 20px;
+  }
+
+  .free-chapter-box h2 {
+    font-size: 25px;
+  }
+
+  .free-chapter-box p {
+    font-size: 12px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .free-chapter-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .free-chapter-form input,
+  .free-chapter-form button {
+    width: 100%;
+    height: 45px;
+    flex: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .free-chapter-box {
+    padding: 35px 14px;
+  }
+
+  .free-chapter-box h2 {
+    font-size: 22px;
+  }
+}

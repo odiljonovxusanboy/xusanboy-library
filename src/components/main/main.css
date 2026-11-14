@@ -1,0 +1,171 @@
+
+.main {
+  width: 100%;
+  min-height: 610px;
+  background: #1e3b68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 850px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.main-left {
+  width: 390px;
+  color: white;
+}
+
+.welcome {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.main-left h1 {
+  font-family: Georgia, serif;
+  font-size: 39px;
+  line-height: 1.2;
+}
+
+.main-left p {
+  color: #b4c0d4;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.main-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.main-buttons button {
+  background: #ffca42;
+  color: #1e3b68;
+  border: none;
+  padding: 14px 32px;
+  cursor: pointer;
+}
+
+.main-buttons a {
+  color: white;
+  font-size: 13px;
+}
+
+.book-info {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.book-info h3 {
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+.book-info span {
+  color: #b4c0d4;
+  font-size: 11px;
+  padding-left: 20px;
+}
+
+.main-right {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-image {
+  width: 380px;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .main-container {
+    gap: 20px;
+  }
+
+  .main-left h1 {
+    font-size: 32px;
+  }
+
+  .main-right {
+    width: 50%;
+  }
+
+  .book-image {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .main {
+    padding: 40px 0;
+  }
+
+  .main-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .main-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-left h1 {
+    font-size: 32px;
+  }
+
+  .main-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .book-info {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-right {
+    width: 100%;
+  }
+
+  .book-image {
+    width: 100%;
+    max-width: 340px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-left h1 {
+    font-size: 27px;
+  }
+
+  .book-image {
+    height: 400px;
+  }
+}

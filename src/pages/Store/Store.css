@@ -1,0 +1,74 @@
+
+.my-store {
+  width: 100%;
+  min-height: 250px;
+  background-color: #1e3b68;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 45px 20px;
+  box-sizing: border-box;
+}
+
+.my-store-content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.my-store-content h1 {
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.my-store-line {
+  display: block;
+  width: 31px;
+  height: 2px;
+  background-color: #ffca42;
+  margin: 17px auto;
+}
+
+.my-store-content p {
+  color: #b4c4dd;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .my-store {
+    min-height: 230px;
+  }
+
+  .my-store-content h1 {
+    font-size: 27px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .my-store {
+    min-height: 220px;
+    padding: 40px 20px;
+  }
+
+  .my-store-content h1 {
+    font-size: 25px;
+  }
+
+  .my-store-content p {
+    font-size: 11px;
+  }
+
+  .my-store-break {
+    display: none;
+  }
+}

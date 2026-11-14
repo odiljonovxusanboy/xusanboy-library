@@ -1,0 +1,158 @@
+
+.learn {
+  width: 100%;
+  background: white;
+  padding: 70px 0 55px;
+  box-sizing: border-box;
+}
+
+.learn-title {
+  text-align: center;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.learn-title::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #ffca42;
+  margin: 12px auto 0;
+}
+
+.learn-container {
+  width: 675px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 28px auto 0;
+}
+
+.learn-cards {
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.learn-card {
+  min-height: 156px;
+  background: #f4f7ff;
+  padding: 17px;
+  box-sizing: border-box;
+}
+
+.learn-card span {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #ffca42;
+  color: #1e3b68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 12px;
+}
+
+.learn-card p {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.35;
+  margin-top: 17px;
+}
+
+.learn-image {
+  width: 288px;
+  height: 340px;
+  border: 6px solid #ffca42;
+  box-sizing: border-box;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.learn-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  border: 2px solid #dce2eb;
+  box-sizing: border-box;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .learn-container {
+    gap: 25px;
+  }
+
+  .learn-cards {
+    width: 55%;
+  }
+
+  .learn-image {
+    width: 40%;
+    height: 300px;
+  }
+}
+
+/* Telefon */
+
+@media (max-width: 600px) {
+  .learn {
+    padding: 45px 0;
+  }
+
+  .learn-title {
+    font-size: 22px;
+  }
+
+  .learn-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .learn-cards {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .learn-card {
+    min-height: 145px;
+    padding: 14px;
+  }
+
+  .learn-card p {
+    font-size: 12px;
+  }
+
+  .learn-image {
+    width: 85%;
+    max-width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 360px) {
+  .learn-card {
+    min-height: 155px;
+    padding: 11px;
+  }
+
+  .learn-card p {
+    font-size: 11px;
+  }
+
+  .learn-image {
+    height: 280px;
+  }
+}

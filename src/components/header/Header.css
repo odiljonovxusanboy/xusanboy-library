@@ -1,0 +1,174 @@
+
+.header {
+  width: 100%;
+  background: #1e3b68;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  width: 850px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  gap: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.logo h2 {
+  font-size: 20px;
+}
+
+.logo-icon {
+  color: #ffca42;
+  font-size: 18px;
+}
+
+.socials {
+  display: flex;
+  gap: 5px;
+}
+
+.socials a {
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: #1e3b68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  background: #ffca42;
+  color: #1e3b68;
+  font-size: 9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-btn {
+  background: #ffca42;
+  color: #1e3b68;
+  border: none;
+  padding: 11px 22px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .header-container {
+    width: 95%;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+
+  .header-left {
+    gap: 10px;
+  }
+
+  .socials {
+    display: none;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .header {
+    min-height: auto;
+    padding: 18px 0;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .navbar {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .header-right {
+    gap: 15px;
+  }
+
+  .order-btn {
+    padding: 9px 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    gap: 12px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+  }
+}

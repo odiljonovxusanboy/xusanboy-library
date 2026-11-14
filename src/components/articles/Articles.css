@@ -1,0 +1,174 @@
+
+.articles {
+  width: 100%;
+  background: #f4f7ff;
+  padding: 75px 0 65px;
+  box-sizing: border-box;
+}
+
+.articles-title {
+  text-align: center;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin: 0 0 28px;
+}
+
+.articles-title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #ffca42;
+  margin: 12px auto 0;
+}
+
+.articles-container {
+  width: 705px;
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.article-card {
+  min-width: 0;
+  background: white;
+  box-shadow: 0 15px 22px #1e3b680d;
+}
+
+.article-image {
+  width: 100%;
+  height: 177px;
+  overflow: hidden;
+  background: #e5eaf2;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 14px 16px 15px;
+}
+
+.article-content h3 {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0 0 9px;
+}
+
+.article-content p {
+  color: #9299a4;
+  font-size: 10px;
+  line-height: 1.9;
+  margin: 0 0 10px;
+}
+
+.article-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.article-bottom a {
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+.article-bottom span {
+  color: #1e3b68;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .articles-container {
+    gap: 14px;
+  }
+
+  .article-image {
+    height: 150px;
+  }
+
+  .article-content {
+    padding: 12px;
+  }
+
+  .article-content h3 {
+    font-size: 12px;
+  }
+
+  .article-bottom {
+    flex-wrap: wrap;
+  }
+}
+
+/* Telefon */
+
+@media (max-width: 600px) {
+  .articles {
+    padding: 45px 0;
+  }
+
+  .articles-title {
+    font-size: 22px;
+  }
+
+  .articles-container {
+    width: 85%;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .article-image {
+    height: 220px;
+  }
+
+  .article-content {
+    padding: 17px;
+  }
+
+  .article-content h3 {
+    font-size: 16px;
+  }
+
+  .article-content p {
+    font-size: 12px;
+  }
+
+  .article-bottom a {
+    font-size: 12px;
+  }
+
+  .article-bottom span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .article-image {
+    height: 190px;
+  }
+
+  .article-content {
+    padding: 13px;
+  }
+
+  .article-content h3 {
+    font-size: 14px;
+  }
+}

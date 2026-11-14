@@ -1,0 +1,128 @@
+.store-section {
+  width: 100%;
+  padding: 65px 20px 50px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.store-container {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 26px;
+  row-gap: 38px;
+}
+
+.store-card {
+  min-width: 0;
+}
+
+.store-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f3f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.store-image img {
+  width: 76%;
+  height: 82%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 7px #00000020);
+}
+
+.store-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.store-info h3 {
+  margin: 0;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.store-price {
+  color: #ffb900;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.store-description {
+  color: #9299a4;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 7px 0 9px;
+}
+
+.store-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+.store-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffca42;
+  flex-shrink: 0;
+}
+
+.store-button {
+  width: 122px;
+  max-width: 100%;
+  height: 37px;
+  margin-top: 13px;
+  background: white;
+  border: 1px solid #ffca42;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.store-button:hover {
+  background: #ffca42;
+}
+
+@media (max-width: 700px) {
+  .store-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .store-section {
+    padding: 35px 16px;
+  }
+
+  .store-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    row-gap: 35px;
+  }
+
+  .store-info h3 {
+    font-size: 17px;
+  }
+
+  .store-description {
+    font-size: 12px;
+  }
+}

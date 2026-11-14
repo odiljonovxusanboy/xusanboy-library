@@ -1,0 +1,218 @@
+
+.chapter {
+  width: 100%;
+  background: #f4f7ff;
+  padding: 75px 0 55px;
+  box-sizing: border-box;
+}
+
+.chapter-title {
+  text-align: center;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 27px;
+}
+
+.chapter-title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #ffca42;
+  margin: 12px auto 0;
+}
+
+.chapter-container {
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.chapter-card {
+  min-height: 134px;
+  background: white;
+  padding: 25px 29px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 20px #1e3b680d;
+}
+
+.chapter-card h3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.chapter-card h3 span {
+  white-space: nowrap;
+}
+
+.chapter-card p {
+  color: #9299a4;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 0 0 10px;
+}
+
+.chapter-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chapter-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #1e3b68;
+  font-family: Georgia, serif;
+  font-size: 11px;
+}
+
+.chapter-info i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffca42;
+  flex-shrink: 0;
+}
+
+.chapter-info small {
+  color: #9299a4;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+}
+
+.chapter-bottom {
+  text-align: center;
+  margin-top: 42px;
+}
+
+.chapter-bottom button {
+  width: 233px;
+  max-width: 90%;
+  height: 35px;
+  background: #ffca42;
+  color: #1e3b68;
+  border: none;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.chapter-bottom p {
+  color: #9299a4;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+
+.chapter-bottom span {
+  color: #9299a4;
+  font-size: 10px;
+}
+
+.chapter-bottom a {
+  color: #1e3b68;
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .chapter {
+    padding: 55px 0 45px;
+  }
+
+  .chapter-container {
+    gap: 16px;
+  }
+
+  .chapter-card {
+    padding: 20px 16px;
+  }
+
+  .chapter-card h3 {
+    gap: 7px;
+    font-size: 12px;
+  }
+
+  .chapter-info {
+    gap: 8px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .chapter {
+    padding: 45px 0;
+  }
+
+  .chapter-title {
+    font-size: 22px;
+  }
+
+  .chapter-container {
+    width: 88%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .chapter-card {
+    min-height: auto;
+    padding: 22px 20px;
+  }
+
+  .chapter-card h3 {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .chapter-card p {
+    font-size: 11px;
+  }
+
+  .chapter-info {
+    gap: 12px;
+  }
+
+  .chapter-info span {
+    font-size: 11px;
+  }
+
+  .chapter-bottom {
+    margin-top: 30px;
+  }
+}
+
+/* Kichik telefon */
+@media (max-width: 360px) {
+  .chapter-title {
+    font-size: 20px;
+  }
+
+  .chapter-card {
+    padding: 18px 14px;
+  }
+
+  .chapter-card h3 {
+    font-size: 12px;
+  }
+
+  .chapter-info {
+    gap: 8px;
+  }
+
+  .chapter-info span {
+    font-size: 10px;
+  }
+}

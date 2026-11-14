@@ -1,0 +1,72 @@
+
+.about-hero {
+  width: 100%;
+  min-height: 220px;
+  background: #1e3b68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  box-sizing: border-box;
+}
+
+.about-content {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.about-content h1 {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 31px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.about-line {
+  width: 31px;
+  height: 2px;
+  background: #ffca42;
+  margin: 17px auto;
+}
+
+.about-content p {
+  color: #b4c4df;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .about-hero {
+    min-height: 210px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+  .about-hero {
+    min-height: 190px;
+    padding: 35px 18px;
+  }
+
+  .about-content h1 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 11px;
+  }
+
+  .about-desktop-break {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-content h1 {
+    font-size: 23px;
+  }
+}
